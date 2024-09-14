@@ -333,7 +333,67 @@ Purpose: study the behavior of different groups of students based on the amount 
 
 ## Work with Database
 
+#### Data Collection
 
+Via Your Platform: with privacy GDR in Eu
+
+Via API/web scraping: boarder outside
+
+application programming interfaces
+
+​	predefined request, typically in json format
+
+​	constitutes extracting information from web pages, generally more challenging to perform on a large scale
+
+Via Conducting surveys
+
+
+
+#### Accessing Data
+
+Structured DB SQL
+
+unstructured(non-SQL) DB
+
+
+
+#### Importing Data
+
+Direct Connection Between DB and Data Viz Software
+
+- work with tables directly
+- pull some data with SQL's help
+
+adv
+
+- all the data is structured
+- outcome is predictable
+- impurities are dealt with automatically
+- the dashboard is updated automatically
+- good for a large amounts of data
+
+disadv
+
+- paid service
+- rubost approach, inflexiable
+
+
+
+Static Connection/direct upload
+
+xls csv json
+
+adv
+
+- flexible
+- easy to change
+
+disadv
+
+- prone to wrong data formats
+- sensitive to column changes
+- sometimes manual updates 
+- unsuitable for big projects
 
 ## Build dashboard in Tableau
 
