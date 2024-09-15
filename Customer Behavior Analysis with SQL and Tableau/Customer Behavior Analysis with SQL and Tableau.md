@@ -395,6 +395,85 @@ disadv
 - sometimes manual updates 
 - unsuitable for big projects
 
+
+generate csv file from exist database table, for later input in tableau
+
+first focusing on student engagement
+
+which means we need student ID, engagement date including either start a video, exam or solved a quiz, and student status(whether they are paid when they are engaged)
+
+
+
+there information are use for construct 
+
+overview: engaged student
+
+engagement: engaged student by time
+
+cohort analysis:  retention curve and its period
+
+
+
+from table student purchases get purchases info for generate the engagement csv file
+
+purchase_id, student_id, purchase_type, date_purchased, date_refunded
+
+consider paid student has different purchase type, the end date should has interval of m/m+2/m+11(m represent month itself), in this case use case when function inside date_add(makedate())
+
+also we need to consider the condition that if the date_refunded is null, using date_end, otherwise using  date_refunded date as date_end
+
+save the constructed table as purchases_info view
+
+view 
+
+In SQL, a view is a virtual table based on the result-set of an SQL statement.
+
+a set of queries that store in a view file which can be query directly
+
+
+
+using purchased_in for view to construct student day-by-day engagement table
+
+we would like to take a look at the student engagement status including its subscription status
+
+so we use left join to exclude student who paid but not engaged in any of the course
+
+also, construct a column named paid using o represent free student and 1 represent paid student
+
+
+
+```mysql
+CASE
+	WHEN date_start IS NULL AND date_end IS NULL THEN 0
+	WHEN date_engaged BETWEEN date_start AND date_end THEN 1
+	WHEN date_engaged NOT BETWEEN date_start AND date_end THEN 0
+	END AS paid
+```
+
+case 1: free student with no purchase info
+
+case 2: engagement date is between paid period which means paid student
+
+case 3: engagement date is not in their paid period which means they are engaged when they are free student
+
+
+
+there is a case that student is engaged in one date and considered as paying student in this period, it may has other paying period that are not engaged, but this info may also include in this table,we should take action in excluding them. We use the maximum value of paid column as paid 
+
+export the result as student_engagement which is a csv file
+
+
+
+shortcut: 
+
+ctrl+D duplicate rows 
+
+ctrl+A select ALL
+
+ctrl+Enter execute the selected portion
+
+
+
 ## Build dashboard in Tableau
 
 
