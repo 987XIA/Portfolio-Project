@@ -475,7 +475,49 @@ ctrl+Enter execute the selected portion
 
 
 ## Build dashboard in Tableau
+overview page:
 
+engaged student <- unique student id
+
+field = pill 
+
+build some parameters:
+
+1. choose minimum active date
+
+2. choose the maximum active date
+3. choose the student type
+   1. 3a. free-plan
+   2. 3b. paying
+   3. 3c. both 
+
+
+
+create parameter minimum date/maximum date
+
+show parameter
+
+create calculation field(like basic query)
+
+create new parameter student type
+
+show parameter
+
+link the parameter to engaged student data source to a calculated field
+
+
+
+kpi average minutes watched(student_learning)
+
+kpi certificates issued（student_certificates)
+
+
+
+minimum date
+
+maximum date
+
+student type
 
 
 ## Analyze the result
