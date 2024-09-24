@@ -519,6 +519,271 @@ maximum date
 
 student type
 
+### 9/22 update
+
+cohort analysis
+
+what is a cohort?
+
+student onboarded in the same month
+
+10 cohorts in the analysis period jan to oct
+
+
+
+what's the purpose of a cohort analysis?
+
+study the way a given cohort behaves and evolves
+
+track the level of engagement of students
+
+excellent way of monitor the retention of customers
+
+measure a marketing campaign's success
+
+measure the success of a new platform feature
+
+
+
+how do we visualize cohorts in a graph?
+
+
+
+How do you read the cohort analysis table?
+
+- Each **cohort** represents a group of **people onboarded in the same month**.
+- Every **row** on the table represents a **different cohort**.
+- The **period** represents the **difference** between a **given month** and the **onboarding month**.
+
+How do you display the retention curves?
+
+- Make a **selection** on the cohort table **to display** one or more **retention curves**.
+- To select **cohorts not on top of each other**, hold the **Control** button on the keyboard and make the selection.
+- The **percentages** on the retention curve display the **number of people** as a fraction of the **first cell** in the selected cohort.
+
+
+
+
+
+## Analyze the result
+
+first formulated the key questions related to the level of customer engagement on the 365 learning platform.
+
+Next, we sketched the essential components.
+
+Our dashboard had to include and chose the best visualizations for each problem.
+
+After that, we opened workbench and learned to manipulate the database to extract the most relevant information.
+
+Finally, we fed that information into Tableau to construct each visualization and combine them in a five page interactive dashboard.
+
+
+
+purpose of this dashboard is to gain insights into customer behavior and answer strategic questions to assess the 365 customer engagement state and find potential area for improvement
+
+
+
+#### platform of engagement
+
+- number of engaged student
+- difference between free-plan and paying student
+- Engagement changing with time
+- marketing campaign effects
+
+from 1st kpi number
+
+more than 19k student engaged in the platform
+
+most of them engaged as free plan student only
+
+But from January 1st to October 31st, some free plan students converted to paying ones.
+
+So in our report, they're counted as having engaged as both free plan and then paying students.
+
+Due to this overlap, the sum of free plan and paying engaged students is more significant than all engaged students shown on the dashboard.
+
+**abnormal behavior**
+
+peak occurring in the middle of August.
+
+On August 15th, 365 opened its platform free of charge for all students for three days.
+
+During that time, the number of engaged students has more than tripled compared to the days in the neighborhood of these three days.
+
+This indicates the effect of free day campaigns on the platform.
+
+High student demand and considerable audience growth.
+
+
+
+**how switching to only free plan customers changes the trend**
+
+We can see that the mid-August peak is even more emphasized now for paying users.
+
+On the other hand, these three days haven't affected engagement in any way, and that is indeed expected.
+
+Such users have already paid for the product and have no reason to engage more during the free of charge days.
+
+
+
+**exclude the abnormal**
+
+the general trend is that the number of engaged student  on the platform increases
+
+The engagement has grown from 100 students daily in January to approximately 400 by October.
+
+Following the three free of charge days in August, the gamification of the platform in September and
+
+the marketing campaigns that followed to spread the word.
+
+We hoped that the students would engage more and stay engaged longer.
+
+It's wonderful to see that this is indeed the case with a more than 30% increase in the number of engaged students per day compared to the summer months.
+
+This can be appreciated even more if we study the engagement for each month separately.
+
+By observing the scale on the y axis, we can see the increase in numbers roughly 200 engaged students per day in June and July.
+
+Approximately 300 students per day in August and September. And then jumping to about 400 active students in October.
+
+ the bar chart displaying the number of engaged students by month.
+
+We can immediately see that the last three months from the analysis are stronger in terms of the number of engaged students.
+
+It's interesting to note the increase of active paying students as months pass.
+
+
+
+#### Onboarding and Retention
+
+- What is the number of onboarded students compared to the number of registered students?
+
+the term of onboarding varies from different company, so it is hard to set a universal benchmark on a number to determine the onboarding rate as good or bad
+
+assume in 30%-50%
+
+in the chart we can see the rate varies between 40% - 60%, apparently that the new gamified version of platform launching affect the onboarding rate in mid-September, and increased it rate to nearly 70%/
+
+This result confirms the initial hypothesis concerning gamification encouraging 365 newcomers to engage with the content, which as a result earns them certain perks such as coins, experience, points, gifts and beautifully illustrated collections of cards.
+
+-  How long do students typically stay engaged on the platform?
+- How does this number differ between free plan students and paying ones?
+
+As expected, most of the free plant students remain engaged only within the month they've onboarded,
+
+which is also very likely the month they've registered in.
+
+If we use the mouse to select, for example, the January cohort, we can see that only about 3% of the students onboarded in January remain active, also in February.
+
+We should note that a fraction of these students switch to paying ones.
+
+What changes can we incorporate from a business perspective to increase the free plan students time on the platform?
+
+A solution we could implement is to perform a monthly retargeting of the audience who has registered in the past 30 days using paid advertisements.
+
+Hopefully this would increase the engagement of the free plan students and persuade them to try out and stay on the paid version of the platform.
+
+paid student:
+
+About half of the paying students are retained after the first month, and roughly 40% remain active in period two.
+
+Then we observe a plateau where approximately 30% of the students from period zero remain engaged.
+
+We can hypothesize that most students who drop out after the first month have purchased a monthly plan at the beginning of the period and have cancelled their subscription before the 30 days expire.
+
+The other half who remain engaged in period one are supposedly students who've purchased a quarterly or an annual subscription or purchased a monthly subscription at the end of the previous month.
+
+Students with annual or recurring subscriptions will most likely remain engaged in period one and later.
+
+It's hard not to notice the darker cells under period zero next to January, March, July and September.
+
+These are months with a higher number of newly engaged paying subscribers, which is not surprising since each of these months is related to a marketing campaign.
+
+Winter Sale Special Spring Offer Most Wanted campaign and the Data Science Hero campaign popularizing the new gamified look on the platform.
+
+What's very important with this cohort analysis is that it can let the marketing team know whether they've targeted the right people during these campaigns with the knowledge, background and interests that the 365 program requires.
+
+Knowing how and where to find the right audience for your product is essential.
+
+The marketing team has attracted loyal customers likely to remain subscribed for longer.
+
+That way, the customers bring more value to the company by subscribing to a premium service and very importantly, can become ambassadors for your product by recommending it to friends, colleagues or
+
+social media.
+
+retention curves:
+
+the January, March and July cohorts look quite similar, with 50% of the paying students staying active in period one and only a few dropping in period two.
+
+The September cohort, however, stands out with quite a low retention rate of 35% in period one.
+
+One reason for this might be that newcomers have decided to benefit from the lower price during the campaign and try the new gamified features for only a month.
+
+A second hypothesis is that seasonality affects people's motivation and disposition to learn new skills. During the summer, people, especially college students, have more time to practice their hobbies, acquire new knowledge
+
+and expand their skills.
+
+This contrasts with September and October, when college life resumes.
+
+Students are tasked with more responsibilities, and 365 working audience faces a new fiscal quarter, which more often than not results in more pressure and deadlines at work.
+
+Factors like these might hinder the possibility of studying and maintaining learning streaks.
+
+Third.
+
+In preparing the website's new look and expanding the platform's library, the content creators of the 365 team didn't have time to create new videos for their YouTube channel.
+
+As a result, this could have reduced the audience coming from YouTube, which is often those with a genuine interest in the field who would benefit from the platform for a more extended period.
+
+Lastly, but not in terms of importance.
+
+We should remember that the database we use in the course only includes users registered during 2022, while the 365 company has been welcoming students ever since 2018.
+
+At 365, we performed the same cohort analysis using data from 2021 and back.
+
+We found that many of the students who registered a while back had returned to the 365 platform as paying users and went on to explore the new gamified version of the platform.
+
+Additionally, many of these students have remained active during period one, thereby increasing their retention rate of the September cohort.
+
+We should then interpret our results as follows.
+
+35% of the students who registered in 2022 and were first engaged as paying students in September had also engaged with the platform in October.
+
+#### Content Consumption
+
+- On average, how much content is consumed by students regarding minutes watched?
+
+- How does the number differ between free plan students and paying ones?
+
+
+
+#### F2P CR and Subscription Duration
+
+
+
+#### Courses Engagement
+
+
+
+#### Exams
+
+
+
+#### Certificated
+
+
+
+What we've learned
+
+- defined the key questions and hypothesized their answers
+- each project needs to be described in detail and scrutinized by colleagues.
+- created an initial sketch that was our guiding light throughout the project
+- using SQL knowledge to manipulate the database and extract valuable information
+- visualized the results from our SQL analysis in Tableau
+- discussing our findings and assessed the level of engagement of our students.
+- brainstorm ideas on platform enhancement
+
+
 
 ## Analyze the result
 
